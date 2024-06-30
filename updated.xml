@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title><data:view.title.escaped/></title>
+    <b:include data='blog' name='all-head-content'/>
+    <b:skin><![CDATA[]]></b:skin>
+    <style>
+      @import url(&quot;https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Inter:wght@100..900&amp;display=swap&quot;);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: &quot;Inter&quot;, sans-serif;
+  color: #000;
+}
+
+:root {
+  --primary-color: #d1510a;
+  --primary-2-color: #923a06;
+  --accent-color: #f3e8e2;
+}
+
+.container {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 0 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.8;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 3px 50px -7px rgba(0, 0, 0, 0.3);
+  padding: 30px 0;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: &quot;DM Serif Display&quot;, serif;
+}
+
+nav .menu-items {
+  display: flex;
+  gap: 30px;
+}
+
+.btn {
+  background: var(--primary-color);
+  padding: 12px 32px;
+  border-radius: 20px;
+  color: #fff;
+  transition: all 300ms ease;
+}
+
+.btn.light {
+  border: 2px solid var(--primary-color);
+  background: #fff;
+  color: #000;
+}
+
+.btn:hover {
+  background: var(--primary-2-color);
+}
+
+.btn.light:hover {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+/* Header */
+
+header {
+  margin-top: 83px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivWcesecgq2wEJ_SPfhzxfs6vYLsbQN1A7afY75wCwUb5aFLvBH-EYyzddVrrlD06cLwDaLSk1YnDJh19Nrj7qRx-qHWVKvsp1_AJHGvnZoRDAb40KcKpCDO2EccYmDw4bBlp_foyEXvx0g47aDZy4_nWmSzqlyrIT6Y_jm5GmfbO7gB_2nS8UoaQT0g/s1600/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  font-size: 60px;
+  color: #fff;
+  background: #000;
+  padding: 10px;
+  font-family: &quot;DM Serif Display&quot;, serif;
+}
+
+h2 {
+  font-family: &quot;DM Serif Display&quot;, serif;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+/* ABout */
+
+#about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#about .left {
+  flex: 1;
+  font-size: 30px;
+  font-family: &quot;DM Serif Display&quot;, serif;
+}
+
+#about .right {
+  flex: 2;
+}
+
+/* Collaborations */
+
+#collaborations {
+  background: var(--accent-color);
+}
+
+section {
+  padding: 60px 0;
+}
+
+#collaborations h2 {
+  text-align: center;
+}
+
+.brands img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Releases */
+
+.split .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.split img {
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.split .left,
+.split .right {
+  flex: 1;
+}
+
+/* Portfolio */
+
+#portfolio {
+  text-align: center;
+}
+
+#portfolio .btn-container {
+  margin: 30px 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  background: var(--accent-color);
+  padding: 30px 0;
+}
+
+footer .icon svg {
+  height: 40px;
+}
+
+footer .address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+footer .email {
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .value {
+  font-weight: bold;
+}
+
+.mobile-menu,
+.menu-icon {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+  position: fixed;
+  background: #fff;
+  top: 100px;
+  right: 20px;
+  padding: 24px;
+}
+
+.mobile-menu .mobile-menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 700px) {
+  nav .menu-items,
+  nav .right .btn {
+    display: none;
+  }
+
+  nav .menu-icon svg {
+    width: 30px;
+  }
+
+  nav .menu-icon {
+    display: block;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  #about .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .split .container {
+    flex-direction: column;
+  }
+
+  .split .left,
+  .split .right {
+    width: 100%;
+  }
+
+  .split img {
+    width: 100%;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  footer .address {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+    </style>
+    <b:include data='blog' name='google-analytics'/>
+  </head>
+  <body>
+    <b:section id='main' name='Main Posts' showaddelement='yes'/>
+    <div class='mobile-menu'>
+      <div class='mobile-menu-items'>
+        <a href='#'>Home</a>
+        <a href='#'>Portfolio</a>
+        <a href='#'>Music</a>
+        <a href='#'>About</a>
+        <a class='btn' href='#'>Contact</a>
+      </div>
+    </div>
+    <nav>
+      <div class='container'>
+        <div class='left'>
+          <div class='logo'>
+            <a href='#'>SrVJT</a>
+          </div>
+
+          <div class='menu-items'>
+            <a href='#'>Home</a>
+            <a href='#'>Portfolio</a>
+            <a href='#'>Music</a>
+            <a href='#'>About</a>
+          </div>
+        </div>
+
+        <div class='right'>
+          <a class='btn' href='#'>Contact</a>
+          <div class='menu-icon'>
+            <svg class='w-6 h-6' fill='none' stroke='currentColor' stroke-width='1.5' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M3.75 9h16.5m-16.5 6.75h16.5' stroke-linecap='round' stroke-linejoin='round'/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class='container'>
+        <h1>Enjoy Creative Music</h1>
+      </div>
+    </header>
+
+    <section id='about'>
+      <div class='container'>
+        <div class='left'>
+          <h3>Discover the Music of SrVJT</h3>
+        </div>
+
+        <div class='right'>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            accusamus ullam voluptatem autem molestias aspernatur vel ex?
+            Necessitatibus illum error ullam repudiandae? Dolor aliquam tempora
+            ducimus dolore asperiores? Temporibus, omnis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id='collaborations'>
+      <div class='container'>
+        <h2>Brands</h2>
+        <div class='brands'>
+          <img alt='' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhG623Yb60tFgzv6iOMyFe4u1bN4595EbILZ88l9O09Q-3tkbQWHNN9jzlk4KXORo-sQ2UmT4cp8-uCPIjQI6Gfuja8ZqPpdpyn2XzHsJT4Ifvy5ENuDIIhcrrc7kXWanZV-FpIUuYsi41U6Gv-xRRhbhRV5nHM_0-5xBQvOqkIOiCu02Gltk0a67TFaw/s1600/logo1.jpg'/>
+          <img alt='' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoa_5GrijufU_E-yFd5kTyF3Qe1ZvujJPOSFyCGYnWiy-dProdA82S8zgMkbAf2JLAaMMEJwWWmOpxVkZr5svkW6iv8JyY0O4ih6-t9MfJqFwVk0aj4LWIVW0Qj_cL406rW4IwaAZYdI_4hvHA7hWfSYOZRNJQfNIAFZm8kEQWPvTvLoHLc2_3nAmAsw/s1600/logo2.jpg'/>
+          <img alt='' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXWYdIqkDpUD8QqgHo-XmpP2vZPkopN5f5FR-XSRA4l2a3qYOxrUX0zevSPObPOREH72DlB2voQl_dzxLJjHp8u7EJTf9M1A8aIhVM7MlyDJaxZUgsJ92n98zE00AwzZeRxtDscE2baiIjYv7Em-F2P18XWc1hGPxx6oEG8CX-lwLrE4JmMmKRD717Og/s1600/logo3.jpg'/>
+          <img alt='' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9Cnneqms7d-FUfDz1fVFWAVQDB-PrlCiaeQvPnHry4t_Dchul3sfdg3sze7AzuNLrrFNC1MQwEeU5Y9EqVwrxZfX4xwnrSTjR8tveL3LTbNmOjfdNE2-eBp5tRg_0xpq8f0-_9taHM13i2zx2qsKs9VyXHRm2DZmNOvsCu-t5OTDs-EcK5JWm0mZ6YQ/s1600/logo4.jpg'/>
+          <img alt='' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVx7DRxxm5NOD9z3hVEEXsdcWyDNx4elAgxV1HSWcUjsf5fju_lgqiX5QbWl5Hq4ZJu_LiZhwz2CT6q_Hf7mO8CgOv7vCL30BQHsBT2GhcKLgmJMXMOLztMSQm73EoVS83pmo1SO1g-OWHYdpSOfX9ImJ1wURzG-XTjpCaoX6w3mDl3wstrsIeQ8OH4w/s1600/logo5.jpg'/>
+        </div>
+      </div>
+    </section>
+
+    <section class='split' id='releases'>
+      <div class='container'>
+        <div class='left'>
+          <img alt='' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCPy_2qN9Ovvh9OBLzXdKeV5k3stJglZdXT1aZVb1bEH7Tzs-o475p_T8sqjy2GpYudy-XOWP67jFF8I2GjtGHWdbIHBIFFSBGZBD7o08T2zNwbTHXv7bX0u3NbaTxXzJWox2d5Bq1LloE_VbO4cImczpo9VTCd1-T2oagrz004TEp1h1vhJZQFCt_-g/s1600/thumb1.jpg'/>
+        </div>
+
+        <div class='right'>
+          <h2>Latest Releases</h2>
+          <p>
+            Stay up to date with our latest music releases. Discover new songs
+            and albums as soon as they are available.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class='split' id='performance'>
+      <div class='container'>
+        <div class='left'>
+          <h2>Live Performances</h2>
+          <p>
+            Immerse yourself in captivating live performances that will enthrall
+            and entertain, leaving you craving for more with every mesmerizing
+            moment.
+          </p>
+        </div>
+
+        <div class='right'>
+          <img alt='' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5ltEwnTx3r9a4u58QYhMlYhGzKBdI3NqYqZaMiI0DDgDCZ6AVGK-WX-tdNK2VIvFb-YVTaCLZBI5E5bAXR6_7qxG3HORceKro_jLhW2a4KCy2acwcBz5C8c4X7nZ7UiXHSM95VixkyhJPvWc-v4Gfpi80xAtqJbM_yzu_K7e8TcUtYtURXCB0LuJhbw/s1600/thumb2.jpg'/>
+        </div>
+      </div>
+    </section>
+
+    <section id='portfolio'>
+      <div class='container'>
+        <h2>Explore the Portfolio</h2>
+        <p>
+          Discover a collection of original compositions and covers showcasing
+          LBs talent.
+        </p>
+        <div class='btn-container'>
+          <a class='btn' href='#'>Listen to the Music</a>
+          <a class='btn light' href='#'>Contact for Collaborations</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class='container'>
+        <h2>Get in Touch</h2>
+        <p>
+          Feel free to reach out for collaborations, inquiries, or just to say
+          hello!
+        </p>
+
+        <div class='address'>
+          <div class='email'>
+            <div class='icon'>
+              <svg class='w-6 h-6' fill='none' stroke='currentColor' stroke-width='1.5' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25' stroke-linecap='round' stroke-linejoin='round'/>
+              </svg>
+            </div>
+            <div class='label'>Email</div>
+            <div class='info'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+              optio!
+            </div>
+            <div class='value'>info@email.com</div>
+          </div>
+          <div class='email'>
+            <div class='icon'>
+              <svg class='w-6 h-6' fill='none' stroke='currentColor' stroke-width='1.5' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z' stroke-linecap='round' stroke-linejoin='round'/>
+              </svg>
+            </div>
+            <div class='label'>Phone</div>
+            <div class='info'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+              optio!
+            </div>
+            <div class='value'>+1 9999999999</div>
+          </div>
+          <div class='email'>
+            <div class='icon'>
+              <svg class='w-6 h-6' fill='none' stroke='currentColor' stroke-width='1.5' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25' stroke-linecap='round' stroke-linejoin='round'/>
+              </svg>
+            </div>
+            <div class='label'>Office</div>
+            <div class='info'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+              optio!
+            </div>
+            <div class='value'>1234 Elm Street, Springfield, IL 62704, USA</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>const menuIcon = document.querySelector(&quot;.menu-icon&quot;);
+const mobileMenu = document.querySelector(&quot;.mobile-menu&quot;);
+
+menuIcon.addEventListener(&quot;click&quot;, () =&gt; {
+  mobileMenu.classList.toggle(&quot;active&quot;);
+});</script>
+  </body>
+</html>
